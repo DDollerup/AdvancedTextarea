@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "AddPage";
+}
+
+<h2>AddPage</h2>
+
+<form action="/Home/AddPageSubmit" method="post" enctype="multipart/form-data">
+    <table class="table-bordered">
+        <tr>
+            <td>
+                Title:
+            </td>
+            <td>
+                <input type="text" name="Title" placeholder="Title here..." />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Text:
+            </td>
+            <td>
+                <textarea name="Text"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Add Page" />
+            </td>
+        </tr>
+    </table>
+</form>
